@@ -1,0 +1,150 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    background: #6d9974;
+    color: #fff;
+    height: 100px;
+
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 81px;
+    list-style: none;
+    position: relative;
+    top: 36px;
+    font-weight: bolder;
+}
+
+nav li {
+    display: inline;
+}
+nav li:hover{
+    cursor: pointer;
+    color: #000;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+
+}
+header img{
+    width: 84px;
+    height: 84px;
+    position: relative;
+    bottom: 24px;
+    left: 33px;
+}
+/* Main section styles */
+.about-box {
+    background: #fff;
+    padding: 60px 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin: 20px 0;
+}
+
+.img-about {
+    flex: 1;
+    max-width: 100%;
+}
+
+/* Footer styles */
+footer {
+    background: #6d9974;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.prodigy, .social-icon, .services {
+    flex: 1;
+    margin: 10px;
+}
+
+.prodigy h1, .social-icon h2, .services h2 {
+    margin-bottom: 10px;
+}
+
+.social-icon a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon a:hover {
+    color: #ddd;
+}
+
+.services a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.services a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img-about {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .footer-section {
+        flex-direction: column;
+    }
+}

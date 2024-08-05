@@ -1,0 +1,54 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(139, 81, 156);
+    border: 1px solid #ccc;
+    font-size: 2em;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #fff;
+}
+
+.message {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    
+}
